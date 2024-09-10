@@ -1,0 +1,14 @@
+<section class="news">
+    <h2>News & blogs</h2>
+    <hr>
+
+    <ul class="blogs">
+    @for (blog of blogs; track $index) {
+        <li class="blog">
+            {{blog}}
+            <img src="/arrow-right.svg" alt="">
+        </li>
+    }
+    </ul>
+
+</section>

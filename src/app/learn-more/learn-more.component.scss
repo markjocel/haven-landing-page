@@ -1,0 +1,49 @@
+.learn-more{
+    background-color: #0DC0E9;
+    color: white;
+    display: flex;
+
+    .image{
+        flex: 1;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .why{
+        box-sizing: border-box;
+        padding: 2rem 3rem 3rem 3rem;
+        width: 25vw;
+    }
+
+    h2{
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+    }
+
+    p{
+        font-weight: 300;
+    }
+
+    .learn-more-btn{
+        font-size: .9rem;
+        margin-top: 3rem;
+        width: 270px;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: white 1px solid;
+        padding: 0px 0px 0px 12px;
+        cursor: pointer;
+
+        img{
+            height: 40px;
+        }
+
+    }
+}
