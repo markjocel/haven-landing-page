@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -11,12 +11,12 @@ import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 export class ContactComponent {
 
   contactForm = new FormGroup({
-    fullName: new FormControl(''),
-    email: new FormControl(''),
+    fullName: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
     contactNo: new FormControl(''),
     service: new FormControl(''),
-    preferredDay: new FormControl(''),
-    preferredTime: new FormControl(''),
+    preferredDay: new FormControl('', Validators.required),
+    preferredTime: new FormControl('', Validators.required),
     message: new FormControl(''),
   });
 

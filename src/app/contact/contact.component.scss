@@ -36,6 +36,10 @@
                 color: white;
                 outline: none;
             }
+
+            input.ng-invalid:not(.ng-untouched){
+                border: 1px solid red;
+            }
         }
 
         #message{
