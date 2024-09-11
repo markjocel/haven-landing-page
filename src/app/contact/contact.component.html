@@ -1,1 +1,47 @@
-<p>contact works!</p>
+<section class="form">
+
+    <h2>Contact us today</h2>
+    <p>
+        Brief intro paragraph about this section. Bis porepelent quam nam ut raeptam
+        facilio riberum sitatur aut properiata volorer.
+    </p>
+
+    <form [formGroup]="contactForm">
+
+        <div>
+
+            <input id="full-name" type="text" formControlName="fullName" placeholder="Full Name*">
+            
+            <input id="email" type="email" formControlName="email" placeholder="Email address* ">
+
+            <input id="contact-number" type="" formControlName="contactNo" placeholder="Contact number ">
+
+        </div>
+
+        <div>
+            <input id="service" type="" formControlName="service" placeholder="Service">
+
+            <input id="preferred-day" type="" formControlName="preferredDay" placeholder="Preferred day* ">
+
+            <input id="preferred-time" type="" formControlName="preferredTime" placeholder="Preferred time* ">
+
+        </div>
+        <textarea id="message" type="" formControlName="message" placeholder="Message" rows="4"></textarea>
+
+        <button>Submit</button>
+    </form>
+</section>
+
+<section class="links">
+    <h2>Contact us</h2>
+    <hr>
+
+    <ul class="contacts">
+    @for (contact of contacts; track $index) {
+        <li class="contact">
+            <img src="{{contact.icon}}" alt="">
+            <a href="{{contact.link}}" target="_blank" rel="noopener noreferrer">{{contact.contact}}</a>
+        </li>
+    }
+    </ul>
+</section>
