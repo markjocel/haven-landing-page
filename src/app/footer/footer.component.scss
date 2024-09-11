@@ -90,3 +90,23 @@ footer{
         padding: .7rem 0 1rem 0;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .newsletter{
+        flex-flow: column;
+
+        *{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .menu{
+        .links{
+            flex-flow: column;
+        }
+    }
+
+    .copyright{
+        font-size: .5rem !important;
+    }
+}

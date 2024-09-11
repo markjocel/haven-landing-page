@@ -47,3 +47,21 @@
 
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .learn-more{
+        flex-flow: column;
+
+        .why{
+            width: 100% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .why{
+        width: 40vw !important;
+    }
+
+}

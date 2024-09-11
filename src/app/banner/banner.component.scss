@@ -17,3 +17,14 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .banner{
+        flex-flow: column;
+        align-items: center;
+
+        span{
+            margin-bottom: .5rem;
+        }
+    }
+}

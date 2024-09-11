@@ -120,3 +120,38 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    :host{
+        flex-flow: column;
+    }
+
+    .form{
+        padding: 1rem;
+
+        div{
+            flex-flow: column;
+
+            input{
+                box-sizing: border-box;
+                width: 100% !important;
+            }
+        }
+    }
+
+    .links{
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1300px) {
+
+    .links{
+        width: 50vw !important;
+    }
+
+    .form{
+        padding: 2rem;
+    }
+
+}
+

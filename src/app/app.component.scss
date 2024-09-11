@@ -9,3 +9,13 @@
 .news-container{
     flex: 1;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-news{
+        flex-flow: column;
+
+        .home-container{
+            width: 100vw;
+        }
+    }
+}
